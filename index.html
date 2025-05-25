@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garissa FarmCare Agrovet - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.jpg" type="image/x-icon">
+</head>
+<body>
+   
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Garissa <span>FarmCare</span></h1><br><br>
+                <p>Your trusted agrovet partner</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+    <div class="container">
+        <div class="hero-content">
+            <h2>Quality Agricultural & Veterinary Solutions</h2>
+            <p>Serving Garissa County with premium farm inputs and expert advice</p>
+            <a href="products.html" class="btn">Explore Our Products</a>
+        </div>
+    </div>
+    </section>
+    <!-- Hero Section -->
+    
+
+    <!-- Featured Products -->
+   <section class="section">
+    <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="featured-products">
+            <div class="product-card animate">
+                <img src="cow2.jpg" alt="Animal Feed">
+                <h3>Premium Animal Feeds</h3>
+                <p>High-quality feeds for livestock and poultry</p>
+                <a href="products.html#feeds" class="btn-small">View Details</a>
+            </div>
+            <div class="product-card animate">
+                <img src="crop protection.jpg" alt="Crop Protection">
+                <h3>Crop Protection</h3>
+                <p>Effective pesticides and herbicides</p>
+                <a href="products.html#crop-protection" class="btn-small">View Details</a>
+            </div>
+            <div class="product-card animate">
+                <img src="camel.webp" alt="Veterinary Medicine">
+                <h3>Veterinary Medicines</h3>
+                <p>Quality animal health products</p>
+                <a href="products.html#vet-medicines" class="btn-small">View Details</a>
+            </div>
+        </div>
+    </div>
+    <style>
+        .featured-products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        
+        .product-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+        }
+        
+        .product-card p {
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+        
+        .btn-small {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-small:hover {
+            background-color: var(--dark-color);
+        }
+    </style>
+</section>
+
+    <!-- Services Preview -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-preview">
+                <div class="service-card animate">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Farm Consultations</h3>
+                    <p>Expert advice for your farming needs</p>
+                    <a href="services.html#consultations" class="btn-small">Learn More</a>
+                </div>
+                <div class="service-card animate">
+                    <i class="fas fa-syringe"></i>
+                    <h3>Veterinary Services</h3>
+                    <p>Professional animal healthcare</p>
+                    <a href="services.html#vet-services" class="btn-small">Learn More</a>
+                </div>
+                <div class="service-card animate">
+                    <i class="fas fa-truck"></i>
+                    <h3>Delivery Services</h3>
+                    <p>Convenient product delivery</p>
+                    <a href="services.html#delivery" class="btn-small">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Garissa FarmCare</h3>
+                    <p>Your trusted partner for agricultural and veterinary solutions in Garissa County.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Main Street, Garissa</p>
+                    <p><i class="fas fa-phone"></i> +254 712 345 678</p>
+                    <p><i class="fas fa-envelope"></i> info@garissafarmcare.com</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2025 Garissa FarmCare Agrovet. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

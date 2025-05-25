@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Garissa FarmCare Agrovet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.jpg" type="image/x-icon">
+    <style>
+        /* Services Page Specific Styles */
+        .services-section {
+            padding: 5rem 0;
+        }
+        
+        .service-category {
+            margin-bottom: 4rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+        
+        .service-card p {
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+        
+        .service-features {
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-features li {
+            margin-bottom: 0.5rem;
+            list-style-type: none;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .service-features li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Garissa <span>FarmCare</span></h1>
+                <p>Your trusted agrovet partner</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Banner -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1470114716159-e389f8712fda?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+    <div class="container">
+        <div class="hero-content">
+            <h2>Our Professional Services</h2>
+            <p>Expert solutions for your farming and animal health needs</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <!-- Farm Consultations -->
+            <div class="service-category" id="consultations">
+                <h2 class="section-title">Farm Consultations</h2>
+                <div class="services-grid">
+                    <div class="service-card animate">
+                        <div class="service-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Crop Farming Advice</h3>
+                        <p>Expert guidance on crop selection, planting, and management</p>
+                        <ul class="service-features">
+                            <li>Soil testing recommendations</li>
+                            <li>Crop rotation planning</li>
+                            <li>Pest and disease management</li>
+                            <li>Irrigation advice</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Book Consultation</a>
+                    </div>
+                    <div class="service-card animate">
+                        <div class="service-icon">
+                            <i class="fas fa-cow"></i>
+                        </div>
+                        <h3>Livestock Management</h3>
+                        <p>Professional advice for optimal animal husbandry</p>
+                        <ul class="service-features">
+                            <li>Breeding programs</li>
+                            <li>Feed formulation</li>
+                            <li>Housing design</li>
+                            <li>Disease prevention</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Book Consultation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Veterinary Services -->
+            <div class="service-category" id="vet-services">
+                <h2 class="section-title">Veterinary Services</h2>
+                <div class="services-grid">
+                    <div class="service-card animate">
+                        <div class="service-icon">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                        <h3>Animal Treatment</h3>
+                        <p>Professional medical care for your livestock and pets</p>
+                        <ul class="service-features">
+                            <li>Diagnosis and treatment</li>
+                            <li>Vaccination programs</li>
+                            <li>Deworming schedules</li>
+                            <li>Surgical procedures</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Book Appointment</a>
+                    </div>
+                    <div class="service-card animate">
+                        <div class="service-icon">
+                            <i class="fas fa-clinic-medical"></i>
+                        </div>
+                        <h3>Farm Visits</h3>
+                        <p>On-site veterinary services for your farm</p>
+                        <ul class="service-features">
+                            <li>Herd health checks</li>
+                            <li>Disease outbreak management</li>
+                            <li>Vaccination campaigns</li>
+                            <li>Post-mortem examinations</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Schedule Visit</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delivery Services -->
+            <div class="service-category" id="delivery">
+                <h2 class="section-title">Delivery Services</h2>
+                <div class="services-grid">
+                    <div class="service-card animate">
+                        <div class="service-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Product Delivery</h3>
+                        <p>Convenient delivery of farm inputs to your location</p>
+                        <ul class="service-features">
+                            <li>Garissa town deliveries</li>
+                            <li>Surrounding areas</li>
+                            <li>Bulk delivery available</li>
+                            <li>Timely service</li>
+                        </ul>
+                        <a href="contact.html" class="btn">Arrange Delivery</a>
+                    </div>
+                    <div class="service-card animate">
+                        <div class="service-icon">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <h3>Emergency Services</h3>
+                        <p>24/7 emergency support for urgent needs</p>
+                        <ul class="service-features">
+                            <li>Emergency vet calls</li>
+                            <li>Urgent product delivery</li>
+                            <li>After-hours support</li>
+                            <li>Quick response</li>
+                        </ul>
+                        <a href="tel:+254712345678" class="btn">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Garissa FarmCare</h3>
+                    <p>Your trusted partner for agricultural and veterinary solutions in Garissa County.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Main Street, Garissa</p>
+                    <p><i class="fas fa-phone"></i> +254 712 345 678</p>
+                    <p><i class="fas fa-envelope"></i> info@garissafarmcare.com</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2025 Garissa FarmCare Agrovet. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
